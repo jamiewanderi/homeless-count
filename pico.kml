@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="pico" id="pico">
+	<SimpleField name="Tract" type="string"></SimpleField>
+</Schema>
+<Folder><name>pico</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>1</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#pico">
+		<SimpleData name="Tract">702002 - C</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><altitudeMode>relativeToGround</altitudeMode><outerBoundaryIs><LinearRing><altitudeMode>relativeToGround</altitudeMode><coordinates>-118.4850326306513,34.005918378054218 -118.48512609658979,34.005892913392586 -118.48649072298353,34.004932508797786 -118.48711988929699,34.004495278380055 -118.49021780512336,34.007401794510052 -118.49031715040375,34.007505550622255 -118.49030636581658,34.007512923232348 -118.49018025547562,34.007600553396507 -118.48977675765884,34.007880929398738 -118.48969639096634,34.007936772914377 -118.48959202972407,34.008009677281571 -118.48822963104807,34.008961397811625 -118.48815649147011,34.009012489327425 -118.48815647326492,34.009012457630028 -118.4850326306513,34.005918378054218</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

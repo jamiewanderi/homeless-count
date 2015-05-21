@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Collect Data</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+      
+    <!--Stylesheets-->
+    <link href="locate.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      
+    <!--Google API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD-9fOQ4v0D3YeliC4u4QIguIeWkbmGTs&libraries=places"></script>
+      
+    <!--Javascript File-->
+    <script src="locate.js"></script>
+    </head>
+    
+    
+    <body>
+      <!--Header Content-->
+      <div class="container">
+        <div class="row text-left header">
+          <div class="col-xs-9">
+              <h3>Collect Data</h3>
+          </div>
+          <div class="col-xs-3">
+              <a href="/"><i class="glyphicon glyphicon-home"></i></a>
+          </div>
+        </div>    
+    </div>
+      
+      
+      <!--Navigation Tabs-->
+      <div role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Map</a></li> 
+            <li role="presentation"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">Add Details</a></li>
+        </ul>
+          
+      <!--Map Pane-->
+      <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">
+              <div id="togglebutton">
+                  <button type="button" class="btn btn-success btn-block markerButton" id="drop" onclick="addMarker(); $('#togglebutton').toggle();">Drop Marker</button>
+              </div>
+              
+            <!--Search Box-->
+            <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+              
+            <!--Google Map-->
+            <div id="map-canvas"></div>
+            <div id="lat"></div><br>
+            <div id="lng"></div>  
+          </div>
+        
+      <!--Details Pane-->
+      <div role="tabpanel" class="tab-pane" id="details">
+          <form>
+              <div class="form-group">
+                  <label for="type">Type</label>
+                  <select class="form-control">
+                      <option>Individual</option>
+                      <option>Vehicle</option>
+                      <option>Encampment</option>
+                  </select>
+                  <br>
+                  <label for="quantity">Quantity</label>
+                  <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                  </select>
+                  <br>
+                  <!--<label>Under 18?</label><br>
+                  <label class="radio-inline">
+                      <input type="radio" id="yes" value="optyes">Yes
+                  </label>
+                  <label class="radio-inline">
+                      <input type="radio" id="no" value="optno">No
+                  </label>-->
+              </div>
+              <button type="button" class="btn btn-primary btn-block">Submit</button>
+          </form>
+            
+            
+            
+            
+            <!--<div class="container">
+        <div class="row text-left">
+            <div class="col-xs-12">
+            <p>Latitude: <input size="10" type="text" id="latbox" name="lat" ></p>
+            <p>Longitude: <input size="10" type="text" id="lngbox" name="lng" ></p>
+            </div>
+        </div>  
+            </div>-->
+          </div>
+            
+      </div>      
+      </div>
+      
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
