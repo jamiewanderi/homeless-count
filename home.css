@@ -1,0 +1,9 @@
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.well {
+    background-color: aqua;
+}
